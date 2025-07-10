@@ -1,0 +1,37 @@
+Script started on 2025-07-10 23:11:23+05:30 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="156" LINES="37"]
+[?2004h]0;root@DESKTOP-Q9T0Q5U: /mnt/c/Users/jcvid/Desktop/FullStack/part12-containers-applications/script-answersroot@DESKTOP-Q9T0Q5U:/mnt/c/Users/jcvid/Desktop/FullStack/part12-containers-applications/script-answers# $ docker container run hello-worlddocker -v[Kollama run mistralcurl https://ollama.ai/install.sh | sh[11Pwsl --set-default-version 2curl https://ollama.ai/install.sh | sh[20Pollama run mistral[9Pdocker -v$ docker container run hello-world[K$ docker container run hello-world[Kdocker run -it ubuntu bash
+[?2004lUnable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2Kb08e2ff4391e: Pulling fs layer [1B[1A[2Kb08e2ff4391e: Downloading [=>                                                 ]  1.049MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [===>                                               ]  2.097MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [=====>                                             ]  3.146MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [=======>                                           ]  4.194MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [=========>                                         ]  5.681MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [============>                                      ]   7.34MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [==============>                                    ]  8.389MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [===============>                                   ]  9.437MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [=================>                                 ]  10.49MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [===================>                               ]  11.53MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [=====================>                             ]  12.58MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [======================>                            ]  13.63MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [========================>                          ]  14.68MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [==========================>                        ]  15.73MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [=============================>                     ]  17.83MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [===============================>                   ]  18.87MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [=================================>                 ]  19.92MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [===================================>               ]  20.97MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [=====================================>             ]  22.02MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [======================================>            ]  23.07MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [========================================>          ]  24.12MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [==========================================>        ]  25.17MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [============================================>      ]  26.21MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [=============================================>     ]  27.26MB/29.72MB[1B[1A[2Kb08e2ff4391e: Downloading [===============================================>   ]  28.31MB/29.72MB[1B[1A[2Kb08e2ff4391e: Download complete [1BDigest: sha256:440dcf6a5640b2ae5c77724e68787a906afb8ddee98bf86db94eea8528c2c076
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@8a57a96c0682: /root@8a57a96c0682:/# mkdir /usr/src/app
+[?2004l[?2004h]0;root@8a57a96c0682: /root@8a57a96c0682:/# cd /usr/src//app/     app/
+[?2004l[?2004h]0;root@8a57a96c0682: /usr/src/approot@8a57a96c0682:/usr/src/app# touch index.js
+[?2004l[?2004h]0;root@8a57a96c0682: /usr/src/approot@8a57a96c0682:/usr/src/app# ll
+[?2004ltotal 8
+drwxr-xr-x 2 root root 4096 Jul 10 17:42 [0m[01;34m.[0m/
+drwxr-xr-x 1 root root 4096 Jul 10 17:42 [01;34m..[0m/
+-rw-r--r-- 1 root root    0 Jul 10 17:42 index.js
+[?2004h]0;root@8a57a96c0682: /usr/src/approot@8a57a96c0682:/usr/src/app# exit
+[?2004lexit
+[?2004h]0;root@DESKTOP-Q9T0Q5U: /mnt/c/Users/jcvid/Desktop/FullStack/part12-containers-applications/script-answersroot@DESKTOP-Q9T0Q5U:/mnt/c/Users/jcvid/Desktop/FullStack/part12-containers-applications/script-answers# exit
+[?2004lexit
+
+Script done on 2025-07-10 23:13:00+05:30 [COMMAND_EXIT_CODE="0"]
+MB[1B[1A[2Kb08e2ff4391e: Downloading [===============================================>   ]  28.31MB/29.72MB[1B[1A[2Kb08e2ff4391e: Download complete [1BDigest: sha256:440dcf6a5640b2ae5c77724e68787a906afb8ddee98bf86db94eea8528c2c076
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@8a57a96c0682: /root@8a57a96c0682:/# mkdir /usr/src/app
+[?2004l[?2004h]0;root@8a57a96c0682: /root@8a57a96c0682:/# cd /usr/src//app/     app/
+[?2004l[?2004h]0;root@8a57a96c0682: /usr/src/approot@8a57a96c0682:/usr/src/app# touch index.js
+[?2004l[?2004h]0;root@8a57a96c0682: /usr/src/approot@8a57a96c0682:/usr/src/app# ll
+[?2004ltotal 8
+drwxr-xr-x 2 root root 4096 Jul 10 17:42 [0m[01;34m.[0m/
+drwxr-xr-x 1 root root 4096 Jul 10 17:42 [01;34m..[0m/
+-rw-r--r-- 1 root root    0 Jul 10 17:42 index.js
+[?2004h]0;root@8a57a96c0682: /usr/src/approot@8a57a96c0682:/usr/src/app# exit
+[?2004lexit
+[?2004h]0;root@DESKTOP-Q9T0Q5U: /mnt/c/Users/jcvid/Desktop/FullStack/part12-containers-applications/script-answersroot@DESKTOP-Q9T0Q5U:/mnt/c/Users/jcvid/Desktop/FullStack/part12-containers-applications/script-answers# exit
+[?2004lexit
+Script done.
+[?2004h
