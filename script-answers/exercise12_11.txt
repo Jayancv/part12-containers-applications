@@ -1,0 +1,31 @@
+Script started on 2025-07-15 17:56:21+03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="179" LINES="37"]
+[?2004h]0;root@DESKTOP-Q9T0Q5U: /mnt/c/Users/jcvid/Desktop/FullStack/part12-containers-applications/script-answersroot@DESKTOP-Q9T0Q5U:/mnt/c/Users/jcvid/Desktop/FullStack/part12-containers-applications/script-answers# exitdocker exec -it todo-backend-redis-1 bash
+[?2004l[?2004hroot@7b6bb81c02e0:/data# exitredis-cli
+[?2004l127.0.0.1:6379> [0K127.0.0.1:6379> GET created_todos[0;90;49m key[0m[33C[0K127.0.0.1:6379> SET created_todos 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[38C[0K127.0.0.1:6379> GET created_todos[0;90;49m key[0m[33C[0K127.0.0.1:6379> SET created_todo 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[37C[0K127.0.0.1:6379> GET created_todos[0;90;49m key[0m[33C[0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> KEYS *[22C
+1) "added_todos"
+2) "created_todo"
+3) "created_todos"
+127.0.0.1:6379> [0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> GET created_todos[0;90;49m key[0m[33C[0K127.0.0.1:6379> SET created_todos 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[38C[0K127.0.0.1:6379> GET created_todos[0;90;49m key[0m[33C[0K127.0.0.1:6379> GET created_todos[33C
+"2"
+127.0.0.1:6379> [0K127.0.0.1:6379> GET created_todos[0;90;49m key[0m[33C[0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> GET created_todos[0;90;49m key[0m[33C[0K127.0.0.1:6379> SET created_todos 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[38C[0K127.0.0.1:6379> SET created_todos 9001[38C
+OK
+127.0.0.1:6379> [0K127.0.0.1:6379> SET created_todos 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[38C[0K127.0.0.1:6379> GET created_todos[0;90;49m key[0m[33C[0K127.0.0.1:6379> GET created_todos[33C
+"9002"
+127.0.0.1:6379> [0K127.0.0.1:6379> D[17C[0K127.0.0.1:6379> DE[18C[0K127.0.0.1:6379> DEL[19C[0K127.0.0.1:6379> DEL [0;90;49mkey [key ...][0m[20C[0K127.0.0.1:6379> DEL c[0;90;49m key [key ...][0m[21C[0K127.0.0.1:6379> DEL cr[0;90;49m key [key ...][0m[22C[0K127.0.0.1:6379> DEL cre[0;90;49m key [key ...][0m[23C[0K127.0.0.1:6379> DEL crea[0;90;49m key [key ...][0m[24C[0K127.0.0.1:6379> DEL creat[0;90;49m key [key ...][0m[25C[0K127.0.0.1:6379> DEL create[0;90;49m key [key ...][0m[26C[0K127.0.0.1:6379> DEL created[0;90;49m key [key ...][0m[27C[0K127.0.0.1:6379> DEL created_[0;90;49m key [key ...][0m[28C[0K127.0.0.1:6379> DEL created_t[0;90;49m key [key ...][0m[29C[0K127.0.0.1:6379> DEL created_to[0;90;49m key [key ...][0m[30C[0K127.0.0.1:6379> DEL created_tod[0;90;49m key [key ...][0m[31C[0K127.0.0.1:6379> DEL created_todo[0;90;49m key [key ...][0m[32C[0K127.0.0.1:6379> DEL created_todos[0;90;49m key [key ...][0m[33C[0K127.0.0.1:6379> DEL created_todos[33C
+(integer) 1
+127.0.0.1:6379> [0K127.0.0.1:6379> DEL created_todos[0;90;49m key [key ...][0m[33C[0K127.0.0.1:6379> GET created_todos[0;90;49m key[0m[33C[0K127.0.0.1:6379> SET created_todos 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL][0m[38C[0K127.0.0.1:6379> GET created_todos[0;90;49m key[0m[33C[0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> KEYS *[22C
+1) "added_todos"
+2) "created_todo"
+127.0.0.1:6379> [0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> KEYS *[22C
+1) "added_todos"
+2) "created_todo"
+3) "created_todos"
+127.0.0.1:6379> [0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m[22C[0K127.0.0.1:6379> DEL created_todos[0;90;49m key [key ...][0m[33C[0K127.0.0.1:6379> GET created_todos[0;90;49m key[0m[33C[0K127.0.0.1:6379> GET created_todos[33C
+"1"
+127.0.0.1:6379> [0K127.0.0.1:6379> e[17C[0K127.0.0.1:6379> ex[18C[0K127.0.0.1:6379> exi[19C[0K127.0.0.1:6379> exit[20C[0K127.0.0.1:6379> exit[20C
+[?2004hroot@7b6bb81c02e0:/data# exit
+[?2004lexit
+[?2004h]0;root@DESKTOP-Q9T0Q5U: /mnt/c/Users/jcvid/Desktop/FullStack/part12-containers-applications/script-answersroot@DESKTOP-Q9T0Q5U:/mnt/c/Users/jcvid/Desktop/FullStack/part12-containers-applications/script-answers# exit
+[?2004lexit
+
+Script done on 2025-07-15 17:59:24+03:00 [COMMAND_EXIT_CODE="0"]
