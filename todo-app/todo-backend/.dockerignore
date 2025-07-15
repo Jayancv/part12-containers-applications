@@ -4,3 +4,4 @@ node_modules
 Dockerfile
 /dist
 /mongo_data
+/redis_data
