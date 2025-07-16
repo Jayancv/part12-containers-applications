@@ -11,7 +11,7 @@ const TodoList = ({ todos, deleteTodo, completeTodo }) => {
 
   return (
     <>
-      {todos.map(todo => {
+      {todos?.map(todo => {
         const doneInfo = (
           <>
             <span>This todo is done</span>
