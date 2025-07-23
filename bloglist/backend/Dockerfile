@@ -1,0 +1,25 @@
+FROM node:20
+
+WORKDIR /usr/src/app
+
+COPY --chown=node:node . .
+
+ARG PORT
+ENV PORT=${PORT}
+
+ARG SECRET
+ENV SECRET=${SECRET}
+
+ARG MONGODB_URI
+ENV MONGODB_URI=${MONGODB_URI}
+
+ARG TEST_MONGODB_URI
+ENV TEST_MONGODB_URI=${TEST_MONGODB_URI}
+
+RUN npm ci
+
+RUN npm run test
+
+USER node
+
+CMD ["npm", "run", "start"]

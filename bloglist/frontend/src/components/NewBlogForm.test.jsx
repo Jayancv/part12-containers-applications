@@ -2,6 +2,14 @@ import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import NewBlogForm from './NewBlogForm'
 
+beforeEach(() => {
+  const user = {
+    username: 'testuser',
+    name: 'Test User',
+    token: '12345'
+  }
+  window.localStorage.setItem('loggedBlogappUser', JSON.stringify(user))
+})
 
 test('NewBlogForm updates parent state and calls onSubmit', async () => {
 
@@ -29,4 +37,8 @@ test('NewBlogForm updates parent state and calls onSubmit', async () => {
   expect(mockCreateBlog.mock.calls[0][0].title).toBe('Blog Title')
   expect(mockCreateBlog.mock.calls[0][0].author).toBe('Author Name')
   expect(mockCreateBlog.mock.calls[0][0].url).toBe('http://google.com')
+})
+
+afterEach(() => {
+  window.localStorage.clear()
 })

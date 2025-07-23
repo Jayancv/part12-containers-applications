@@ -3,6 +3,13 @@ import userEvent from '@testing-library/user-event'
 import Blog from './Blog'
 import '@testing-library/jest-dom'
 
+beforeEach(() => {
+    window.localStorage.setItem('loggedBlogappUser', JSON.stringify({
+      name: 'Jayan Vi',
+      username: 'jayanvi',
+    }))
+})
+
 test('renders content', () => {
   const blog = {
     title: 'Test Blog',
@@ -94,4 +101,8 @@ test('clicking the like button twice calls updateBlog twice', async () => {
   // Actuallly the likes are not incremented in the mock, so we need to check the calls
   // expect(mockUpdateBlog.mock.calls[0][0].likes).toBe(6)
   // expect(mockUpdateBlog.mock.calls[1][0].likes).toBe(7)
+})
+
+afterEach(() => {
+  window.localStorage.clear()
 })
